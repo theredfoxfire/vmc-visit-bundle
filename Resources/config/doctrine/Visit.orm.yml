@@ -1,0 +1,46 @@
+Vmc\VisitBundle\Entity\Visit:
+ type: entity
+ table: visit
+ id:
+  id: 
+   type: integer
+   generator: { strategy: AUTO }
+ fields:
+  no_rm:
+   type: string
+   length: 10
+   unique: true
+  name:
+   type: string
+  alamat:
+   type: string
+  phone:
+   type: string
+   length: 20
+  gender:
+   type: string
+  birth_date:
+   type: date
+  addtional_info:
+   type: text
+  is_delete:
+   type: boolean
+   nullable: true
+  provinsi_id:
+   type: integer
+  kabupaten_id:
+   type: integer
+  kecamatan:
+   type: string
+  alamat:
+   type: string
+  pos:
+   type: string
+  asal_sekolah:
+   type: string
+  no_ijasah:
+   type: string
+  jumlah_un:
+   type: string
+  jurusan_sekolah:
+   type: string

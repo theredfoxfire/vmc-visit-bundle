@@ -1,0 +1,18 @@
+{% block content %}
+    <h1 class="title">{{ 'visit.list'|trans({}, 'VmcVisitBundle') }}</h1>
+
+    <ul id="visit-list">
+        {% for visit in visits %}
+            <li>
+                <a href="{{ path('api_1_get_visit', {'id': visit.id}) }}">{{ visit.name }}</a>
+                {#[<a href="{{ path('api_1_edit_visits', {'id': visit.id}) }}">{{ 'visit.edit.link'|trans({}, 'VmcVisitBundle') }}</a>]#}
+                {#[<a href="{{ path('api_1_remove_visits', {'id': visit.id}) }}">{{ 'visit.remove.link'|trans({}, 'VmcVisitBundle') }}</a>]#}
+            </li>
+        {% else %}
+            <li>{{ 'visit.list.empty'|trans({}, 'VmcVisitBundle') }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="{{ path('api_1_new_visit') }}">{{ 'visit.new.link'|trans({}, 'VmcVisitBundle') }}</a>
+    </p>
+{% endblock %}

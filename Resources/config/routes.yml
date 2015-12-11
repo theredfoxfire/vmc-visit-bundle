@@ -1,0 +1,5 @@
+ais_visit_visit:
+    type: rest
+    prefix: /v1
+    resource: Vmc\VisitBundle\Controller\VisitController
+    name_prefix:  api_1_ # naming collision
