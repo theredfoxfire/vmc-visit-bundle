@@ -12,148 +12,132 @@ Interface VisitInterface
     public function getId();
 
     /**
-     * Set noVisit
+     * Set patientId
      *
-     * @param string $noVisit
-     *
-     * @return Visit
-     */
-    public function setNoVisit($noVisit);
-
-    /**
-     * Get noVisit
-     *
-     * @return string
-     */
-    public function getNoVisit();
-
-    /**
-     * Set name
-     *
-     * @param string $name
+     * @param integer $patientId
      *
      * @return Visit
      */
-    public function setNama($name);
+    public function setPatientId($patientId);
 
     /**
-     * Get name
+     * Get patientId
      *
-     * @return string
+     * @return integer
      */
-    public function getNama();
+    public function getPatientId();
 
     /**
-     * Set nameSingkat
+     * Set date
      *
-     * @param string $nameSingkat
+     * @param \DateTime $date
      *
      * @return Visit
      */
-    public function setNamaSingkat($nameSingkat);
+    public function setDate($date);
 
     /**
-     * Get nameSingkat
-     *
-     * @return string
-     */
-    public function getNamaSingkat();
-
-    /**
-     * Set email
-     *
-     * @param string $email
-     *
-     * @return Visit
-     */
-    public function setEmail($email);
-
-    /**
-     * Get email
-     *
-     * @return string
-     */
-    public function getEmail();
-
-    /**
-     * Set phone
-     *
-     * @param string $phone
-     *
-     * @return Visit
-     */
-    public function setPhone($phone);
-
-    /**
-     * Get phone
-     *
-     * @return string
-     */
-    public function getPhone();
-
-    /**
-     * Set gender
-     *
-     * @param string $gender
-     *
-     * @return Visit
-     */
-    public function setGender($gender);
-
-    /**
-     * Get gender
-     *
-     * @return string
-     */
-    public function getGender();
-
-    /**
-     * Set tempatLahir
-     *
-     * @param string $tempatLahir
-     *
-     * @return Visit
-     */
-    public function setTempatLahir($tempatLahir);
-
-    /**
-     * Get tempatLahir
-     *
-     * @return string
-     */
-    public function getTempatLahir();
-
-    /**
-     * Set tanggalLahir
-     *
-     * @param \DateTime $tanggalLahir
-     *
-     * @return Visit
-     */
-    public function setTanggalLahir($tanggalLahir);
-
-    /**
-     * Get tanggalLahir
+     * Get date
      *
      * @return \DateTime
      */
-    public function getTanggalLahir();
+    public function getDate();
 
     /**
-     * Set agama
+     * Set keluhan
      *
-     * @param string $agama
+     * @param string $keluhan
      *
      * @return Visit
      */
-    public function setAgama($agama);
+    public function setKeluhan($keluhan);
 
     /**
-     * Get agama
+     * Get keluhan
      *
      * @return string
      */
-    public function getAgama();
+    public function getKeluhan();
+
+    /**
+     * Set pemeriksaanFisik
+     *
+     * @param string $pemeriksaanFisik
+     *
+     * @return Visit
+     */
+    public function setPemeriksaanFisik($pemeriksaanFisik);
+
+    /**
+     * Get pemeriksaanFisik
+     *
+     * @return string
+     */
+    public function getPemeriksaanFisik();
+
+    /**
+     * Set diagnosis
+     *
+     * @param string $diagnosis
+     *
+     * @return Visit
+     */
+    public function setDiagnosis($diagnosis);
+
+    /**
+     * Get diagnosis
+     *
+     * @return string
+     */
+    public function getDiagnosis();
+
+    /**
+     * Set tindakan
+     *
+     * @param string $tindakan
+     *
+     * @return Visit
+     */
+    public function setTindakan($tindakan);
+
+    /**
+     * Get tindakan
+     *
+     * @return string
+     */
+    public function getTindakan();
+
+    /**
+     * Set obat
+     *
+     * @param string $obat
+     *
+     * @return Visit
+     */
+    public function setObat($obat);
+
+    /**
+     * Get obat
+     *
+     * @return string
+     */
+    public function getObat();
+
+    /**
+     * Set biaya
+     *
+     * @param string $biaya
+     *
+     * @return Visit
+     */
+    public function setBiaya($biaya);
+
+    /**
+     * Get biaya
+     *
+     * @return string
+     */
+    public function getBiaya();
 
     /**
      * Set isDelete
@@ -170,148 +154,4 @@ Interface VisitInterface
      * @return boolean
      */
     public function getIsDelete();
-
-    /**
-     * Set provinsiId
-     *
-     * @param integer $provinsiId
-     *
-     * @return Visit
-     */
-    public function setProvinsiId($provinsiId);
-
-    /**
-     * Get provinsiId
-     *
-     * @return integer
-     */
-    public function getProvinsiId();
-
-    /**
-     * Set kabupatenId
-     *
-     * @param integer $kabupatenId
-     *
-     * @return Visit
-     */
-    public function setKabupatenId($kabupatenId);
-
-    /**
-     * Get kabupatenId
-     *
-     * @return integer
-     */
-    public function getKabupatenId();
-
-    /**
-     * Set kecamatan
-     *
-     * @param string $kecamatan
-     *
-     * @return Visit
-     */
-    public function setKecamatan($kecamatan);
-
-    /**
-     * Get kecamatan
-     *
-     * @return string
-     */
-    public function getKecamatan();
-
-    /**
-     * Set alamat
-     *
-     * @param string $alamat
-     *
-     * @return Visit
-     */
-    public function setAlamat($alamat);
-
-    /**
-     * Get alamat
-     *
-     * @return string
-     */
-    public function getAlamat();
-
-    /**
-     * Set pos
-     *
-     * @param string $pos
-     *
-     * @return Visit
-     */
-    public function setPos($pos);
-
-    /**
-     * Get pos
-     *
-     * @return string
-     */
-    public function getPos();
-
-    /**
-     * Set asalSekolah
-     *
-     * @param string $asalSekolah
-     *
-     * @return Visit
-     */
-    public function setAsalSekolah($asalSekolah);
-
-    /**
-     * Get asalSekolah
-     *
-     * @return string
-     */
-    public function getAsalSekolah();
-
-    /**
-     * Set jumlahUn
-     *
-     * @param string $jumlahUn
-     *
-     * @return Visit
-     */
-    public function setJumlahUn($jumlahUn);
-
-    /**
-     * Get jumlahUn
-     *
-     * @return string
-     */
-    public function getJumlahUn();
-
-    /**
-     * Set jurusanSekolah
-     *
-     * @param string $jurusanSekolah
-     *
-     * @return Visit
-     */
-    public function setJurusanSekolah($jurusanSekolah);
-
-    /**
-     * Get jurusanSekolah
-     *
-     * @return string
-     */
-    public function getJurusanSekolah();
-    
-        /**
-     * Set nationality
-     *
-     * @param string $nationality
-     *
-     * @return Visit
-     */
-    public function setNationality($nationality);
-
-    /**
-     * Get nationality
-     *
-     * @return string
-     */
-    public function getNationality();
 }
