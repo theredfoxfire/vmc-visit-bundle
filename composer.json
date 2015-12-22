@@ -1,5 +1,5 @@
 {
-    "name" : "Vmc/VisitBundle",
+    "name" : "vmc/visitbundle",
     "description" : "A bundle filled with Visit",
     "type" : "symfony-bundle",
     "authors" : [{
